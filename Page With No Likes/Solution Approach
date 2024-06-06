@@ -1,0 +1,7 @@
+I have used the concept of sub-query with the where clause to solve this problem. 
+
+In the sub-query, I have retrieved all the page IDs that have got likes. Then in the main query, I retrieved those page IDs that are 
+not present in the result set of page IDs from the sub-query, for this task, I have used the NOT IN clause. 
+
+So now I have the list of those page IDs which haven't got any likes. Now this list is shown as output after being sorted in 
+ascending order of IDs.
