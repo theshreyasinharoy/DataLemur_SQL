@@ -1,8 +1,8 @@
-Here to solve this problem, I have used the concept of CTE. 
+Here I have to show those candidate IDs who are best suited for an open Data Science job, according to the question, those who are 
+proficient in all 3 of Python, Tableau, and PostgreSQL.
 
-In that CTE, I have calculated the number of tweets per user for the year 2022 and created a tweet_bucket for storing those 
-tweet counts.
+First using where clause I have applied a filter to retrieve only those candidates who have either one or two or all of the skills 
+among Python, Tableau, and PostgreSQL.
 
-Then in the main query, using from that CTE, I have calculated the number of users per tweet_bucket.
-
-Finally both the tweet_bucket & the number of users falling into those buckets are shown as output.
+From this filtered list, using having clause my query shows only those candidates whose skill count is 3 because 3 skills implies 
+that those are the ones who have all the three skills & they're best suited for the job.
