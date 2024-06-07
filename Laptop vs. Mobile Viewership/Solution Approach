@@ -1,0 +1,8 @@
+Here we have to calculate the total viewership for laptops and mobile devices where mobile is defined as the sum of tablet and 
+phone viewership.
+
+To count the number of viewership, I used the aggregate function count, and for adding the conditions of specific devices I used 
+the FILTER clause. 
+
+More specifically, within the FILTER clause, instead of using the "=" operator twice, the IN operator is used while counting 
+mobile viewership to consider both the scenarios for: phone & tablet. 
