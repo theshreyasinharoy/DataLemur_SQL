@@ -25,8 +25,8 @@ battery	         02/22/2022 00:00:00	       2
 battery	         03/22/2022 00:00:00	       3
 bumper	         01/22/2022 00:00:00	       1
 bumper	         02/22/2022 00:00:00	       2
-bumper		                               3
-bumper		                               4
+bumper		                                3
+bumper		                                4
 
 Example Output
 part	                 assembly_step
