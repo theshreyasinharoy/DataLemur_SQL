@@ -12,14 +12,14 @@ viewership Table
 Column Name	                 Type
 user_id	                        integer
 device_type	                 string ('laptop', 'tablet', 'phone')
-view_time	                 timestamp
+view_time	                  timestamp
 
 viewership Example Input
 user_id	       device_type	   view_time
 123	            tablet	     01/02/2022 00:00:00
 125	            laptop	     01/07/2022 00:00:00
 128	            laptop	     02/09/2022 00:00:00
-129	            phone	      02/09/2022 00:00:00
+129	            phone	     02/09/2022 00:00:00
 145	            tablet	     02/24/2022 00:00:00
 
 
