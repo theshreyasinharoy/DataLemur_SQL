@@ -1,0 +1,6 @@
+This task is to show those parts have begun the assembly process but are not yet finished along with their assembly step.
+
+According to the question, an unfinished part lacks a finish_date. 
+
+So we have to simply look for those parts whose finish_date column is null and then show those parts and their assembly step as 
+output.
