@@ -14,9 +14,9 @@ Effective April 11th 2023, the problem statement and assumptions were updated to
 
 parts_assembly Table
 Column Name	       Type
-part	            string
+part	              string
 finish_date	       datetime
-assembly_step	    integer
+assembly_step	      integer
 
 parts_assembly Example Input
 part	           finish_date	         assembly_step
@@ -25,8 +25,8 @@ battery	         02/22/2022 00:00:00	       2
 battery	         03/22/2022 00:00:00	       3
 bumper	         01/22/2022 00:00:00	       1
 bumper	         02/22/2022 00:00:00	       2
-bumper		                                 3
-bumper		                                 4
+bumper		                                3
+bumper		                                4
 
 Example Output
 part	                 assembly_step
