@@ -19,9 +19,9 @@ Chase Freedom Flex	            55000	       1	         2021
 Chase Freedom Flex	            60000	       2	         2021
 Chase Freedom Flex	            65000	       3	         2021
 Chase Freedom Flex	            70000	       4	         2021
-Chase Sapphire Reserve	            170000	       1	          2021
-Chase Sapphire Reserve	            175000	       2	          2021
-Chase Sapphire Reserve	            180000	       3	          2021
+Chase Sapphire Reserve	            170000	       1	         2021
+Chase Sapphire Reserve	            175000	       2	         2021
+Chase Sapphire Reserve	            180000	       3	         2021
 
 Example Output:
     card_name	            difference
