@@ -1,11 +1,14 @@
-SELECT
-        user_id,
-        MAX(CAST (post_date AS DATE)) - MIN(CAST (post_date AS DATE)) AS date_diff
-FROM
-        posts
-WHERE
-        EXTRACT(YEAR FROM post_date)=2021
-GROUP BY
-        user_id
-HAVING
-        COUNT(post_id)>1;
+SELECT   
+         sender_id,
+         COUNT(message_id)
+FROM     
+         messages
+where    
+         EXTRACT(year from sent_date)=2022 and 
+         EXTRACT(month from sent_date)=8
+GROUP BY 
+         sender_id
+ORDER BY 
+         COUNT(message_id) desc
+LIMIT    
+         2;
