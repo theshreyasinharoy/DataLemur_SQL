@@ -1,0 +1,8 @@
+Here we have to identify the top 2 Power Users who sent the highest number of messages on Microsoft Teams in August 2022 and then 
+display the IDs of these 2 users along with the total number of messages they sent. 
+
+First I have retrieved each sender's IDs & their count of messages for the period of August 2022. Using EXTRACT() I have extracted
+the year & month from the sent_date and applied filter using the where clause. 
+
+Now ordering the resultant rows in descending order & then limiting the result by 2 will show the details of those 2 users 
+who sent the highest number of messages.
