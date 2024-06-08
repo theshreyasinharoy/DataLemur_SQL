@@ -1,0 +1,8 @@
+Here to get the difference between the number of highest issuance cards and the lowest issuance cards, I used two aggregate 
+functions MAX() and MIN() respectively to calculate the maximum and minimum values.
+
+Then subtracted the result of MIN() from that of the MAX() which is eventually the difference in the number of issued cards in
+those two months.
+
+Grouped this result by the card names to get that value of the difference for each card. Finally ordered the resultant rows 
+according to the value of the difference in descending order according to the question.
