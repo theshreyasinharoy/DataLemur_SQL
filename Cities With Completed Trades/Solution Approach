@@ -1,0 +1,10 @@
+The task is to write a query to retrieve the top three cities that have the highest number of completed trade orders listed in descending order and to output the city 
+name and the corresponding number of completed trade orders.
+
+I have to retrieve those city names and the corresponding count of orders for which the status value will be 'Completed' as it implies that the trade order is completed. 
+Using the aggregate function COUNT, the number of orders is counted for each city. The output is shown in descending order of that count of orders and only the top 3 rows are 
+shown using the LIMIT clause. 
+
+In this way, we get the top 3 cities.
+
+Here I have used INNER JOIN to join the tables trades and users, using the common column user_id.
