@@ -1,26 +1,26 @@
-***Facebook SQL Interview Question***
+***Microsoft SQL Interview Question***
 Level: Easy
 
-Given a table of Facebook posts, for each user who posted at least twice in 2021, write a query to find the number of days between each user’s first post of the year and 
-last post of the year in the year 2021. Output the user and number of the days between each user's first and last post.
+Write a query to identify the top 2 Power Users who sent the highest number of messages on Microsoft Teams in August 2022. Display the IDs of these 2 users along with the total number of messages they sent. Output the results in descending order based on the count of the messages.
 
-posts Table:
+Assumption: No two users have sent the same number of messages in August 2022.
+
+messages Table:
 Column Name	Type
-user_id	integer
-post_id	integer
-post_content	text
-post_date	timestamp
+message_id	integer
+sender_id	integer
+receiver_id	integer
+content	varchar
+sent_date	datetime
 
-posts Example Input:
-user_id	post_id	post_content	post_date
-151652	599415	Need a hug	07/10/2021 12:00:00
-661093	624356	Bed. Class 8-12. Work 12-3. Gym 3-5 or 6. Then class 6-10. Another day that's gonna fly by. I miss my girlfriend	07/29/2021 13:00:00
-004239	784254	Happy 4th of July!	07/04/2021 11:00:00
-661093	442560	Just going to cry myself to sleep after watching Marley and Me.	07/08/2021 14:00:00
-151652	111766	I'm so done with covid - need travelling ASAP!	07/12/2021 19:00:00
-
+messages Example Input:
+message_id	sender_id	receiver_id	content	sent_date
+901	3601	4500	You up?	08/03/2022 00:00:00
+902	4500	3601	Only if you're buying	08/03/2022 00:00:00
+743	3601	8752	Let's take this offline	06/14/2022 00:00:00
+922	3601	4500	Get on the call	08/10/2022 00:00:00
 
 Example Output:
-user_id	days_between
-151652	2
-661093	21
+sender_id	message_count
+3601	2
+4500	1
