@@ -1,0 +1,16 @@
+SELECT 
+         city,
+         COUNT(order_id) as total_orders
+FROM     
+         trades T INNER JOIN
+         users  U
+ON       
+         T.user_id=U.user_id 
+WHERE    
+         status='Completed'
+GROUP BY 
+         city
+ORDER BY 
+         total_orders DESC
+LIMIT    
+         3;
