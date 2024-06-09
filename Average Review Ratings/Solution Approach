@@ -1,0 +1,10 @@
+Here we are provided a reviews(review_id, user_id, submit_date, product_id, stars) table and we have to write a query to retrieve 
+the average star rating for each product, grouped by month.
+
+We retrieved the value of the month from the submit_date column using the EXTRACT() function, then grouped the data by this month 
+value & product_id. The columns which are displayed as output are the month value, product_id and the average of stars rounded to 2
+decimal places.
+
+The output data is ordered by firstly month values & then by product ID. 
+
+For calculating average, the aggregate function AVG() was used and for rounding, the ROUND() function was used.
