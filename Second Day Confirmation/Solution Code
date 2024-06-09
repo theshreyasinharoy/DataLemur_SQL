@@ -1,0 +1,10 @@
+SELECT 
+       user_id
+FROM   
+       emails INNER JOIN 
+       texts
+ON     
+       emails.email_id=texts.email_id
+WHERE  
+       signup_action='Confirmed' AND 
+       action_date=CAST(signup_date AS DATE)+ INTERVAL '1 Day';
