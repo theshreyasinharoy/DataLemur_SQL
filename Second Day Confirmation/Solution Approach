@@ -1,0 +1,11 @@
+Here the task is to write a query to display the user IDs of those who did not confirm their sign-up on the first day, but 
+confirmed on the second day.
+
+The tables emails(email_id, user_id, signup_date) and texts(text_id, email_id, signup_action, action_date) are provided.
+
+The value of signup_action field will be 'Confirmed' for those users who have completed their sign-up process. Additionally, 
+if they have completed this process on the 2nd day then their action_date will be one day ahead of their signup_date. Applied these two conditions in the where CLAUSE using AND operator. To check the action_date value, first changed the format of signup_date to DATE format using CAST function and then added 1 day to that date using INTERVAL clause.
+
+Here INNER JOIN was performed to join the tables emails and texts using the common column email_id.
+
+Finally, the user_id column is shown as output.
