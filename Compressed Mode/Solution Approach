@@ -1,0 +1,7 @@
+Here we are provided with a table items_per_order(item_count, order_occurrences).
+
+We have to write a query to retrieve the mode of the order occurrences. The mode represents the value with the highest frequency or the most common number of order occurrences.
+
+Here first I have used the aggregate function MAX() to retrieve the highest frequency of order occurrences within a sub-query. Within the main query, I have retrieved the 
+item count corresponding to the highest frequency of order occurrences. Finally, the output which is item_count is sorted in ascending order for those cases where there 
+are multiple item counts with the same mode.
