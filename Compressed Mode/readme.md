@@ -14,8 +14,8 @@ Effective June 14th, 2023, the problem statement has been revised and additional
 
 items_per_order Table:
 Column Name    	     Type
- item_count	         integer
- order_occurrences	 integer
+ item_count	       integer
+ order_occurrences integer
  
 items_per_order Example Input:
   item_count	  order_occurrences
