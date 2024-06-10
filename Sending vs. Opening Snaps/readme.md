@@ -35,15 +35,15 @@ activity_id	    user_id	     activity_type	time_spent	  activity_date
 age_breakdown Table
 Column Name	     Type
   user_id	       integer
-  age_bucket	      string ('21-25', '26-30', '31-25')
+  age_bucket	       string ('21-25', '26-30', '31-25')
 
 age_breakdown Example Input
  user_id	age_bucket
-   123	        31-35
-   456	        26-30
-   789	        21-25
+   123	          31-35
+   456	          26-30
+   789	          21-25
 
 Example Output
 age_bucket	send_perc	open_perc
-  26-30	         65.40	    34.60
-  31-35	         43.75	    56.25
+  26-30	         65.40	        34.60
+  31-35	         43.75	        56.25
