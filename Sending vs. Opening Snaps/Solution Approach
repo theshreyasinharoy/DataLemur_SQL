@@ -1,0 +1,8 @@
+Here we have to write a query to obtain a breakdown of the time spent sending vs. opening snaps as a percentage of total time spent on these activities grouped by age group.
+
+To calculate the percentage values, the aggregate function SUM() and the FILTER clause was used. I calculated the total time spent for sending snaps then divided it by the 
+total time spent for sending & opening the snaps. Finally, multiplied the result with 100.0 to get the percentage value and rounded off the result to 2 decimal places.
+
+The same process was followed to get the percentage value of total time spent on opening the snaps as well.
+
+The final output will be all these calculated percentage values after being grouped by age buckets and the corresponding age buckets.
